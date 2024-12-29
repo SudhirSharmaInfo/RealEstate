@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RealEstate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header class="navbar-section">
+        <div class="navbar-section-res">
+            <div class="navbar-img"><i class="fa-solid fa-house-chimney"></i> <span>RealEstate</span></div>
+            <div class="navbar-right-side">
+                <div class="nav-call-section">
+                    <div><i class="fa-solid fa-phone-volume"></i> Call us</div>
+                    <div>+91-99 11 77 23 84</div>
+                </div>
+                <div onclick="form()" class="nav-log-section">
+                    <span>Log In</span>
+                    <i class="fa-regular fa-user" onclick="form()"></i>
+                </div>
+                <div class="hamburger" onclick="ham()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="hamburger-content" id="hamburger-content">
+                    <div class="hum-close-icon" onclick="hamclose()"><i class="fa-solid fa-xmark formxmark"></i></div>
+                    <div class="hum-li-box">
+                        <li class="hum-li"><a href="#home-page" onclick="hamclose()">Home</a></li>
+                        <li class="hum-li"><a href="#about-page" onclick="hamclose()">About Us</a></li>
+                        <li class="hum-li"><a href="#property-page" onclick="hamclose()">Properties</a></li>
+                        <li class="hum-li"><a href="#service-page" onclick="hamclose()">Services</a></li>
+                        <li class="hum-li"><a href="#contact-page" onclick="hamclose()">Contact Us</a></li>
+                    </div>
+                    <div class="ham-social-icon">
+                        <div class="ham-social-icon-res">
+                            <i class="fa-brands fa-facebook-f facebook"></i>
+                            <i class="fa-brands fa-instagram instagram"></i>
+                            <i class="fa-brands fa-linkedin-in linkdin"></i>
+                            <i class="fa-brands fa-youtube youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="home-section" id="home-page">
+        <div class="home-section-res" data-aos="fade-up" data-aos-anchor-placement="top-center">
+            <div>Finding Your New Home Is Simple</div>
+            <span>RealEstate.com is your go to destination for finding the perfect buying home to suit your needs. With
+                thousand of property listing across the India. </span>
+
+            <form action="#" class="home-section-search">
+                <input type="email" placeholder="Enter your Email">
+                <button type="submit" class="home-submit-button">Get a Quote <i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="to-top"><i class="fa-solid fa-arrow-up fa-lg" style="color: #ffffff;"></i></a>
+
+    <div class="properties-section" id="property-page">
+        <div class="properties-section-res">
+            <h1>Most Viewed</h1>
+            <span>Discover some of the top-listed properties on our website.</span>
+            <div class="properties-section-box" id="properties-section-box">
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 1.jpg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Greater Kailesh-1, South Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Greater Kailesh-1</h4>
+                        <p>Well Renovated Kothi, wide road, nice and Peacefully Location.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 2.png" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Vasant Vihar, South Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Vasant Vihar</h4>
+                        <p>Well Renovated Kothi, wide road, nice and Peacefully Location.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 4.jpg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Connaught Place, New-Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Connaught Place</h4>
+                        <p>Well Renovated Kothi, wide road, nice and Peacefully Location.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 3.jpeg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Greater Kailesh-2, South Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Greater Kailesh-2</h4>
+                        <p>Newly designed ,Second Floor,with brand new interior, luxurious house.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+                
+
+               
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 5.jpeg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Safdarjung Development Area (SDA)</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Safdarjung Development</h4>
+                        <p>Newly designed ,Second Floor,with brand new interior, luxurious house.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 9.jpeg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>R K Puram, Delhi, New Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>R K Puram, Delhi</h4>
+                        <p>Newly designed ,Second Floor,with brand new interior, luxurious house.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+                
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 12.jpg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Greater Kailesh-1, South Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Greater Kailesh-1</h4>
+                        <p>Well Renovated Kothi, wide road, nice and Peacefully Location.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 10.jpeg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>R K Puram Sec-08, Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>R K Puram Sec-08, Delhi</h4>
+                        <p>Newly designed ,Second Floor,with brand new interior, luxurious house.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+            
+
+                <div class="properties-section-item">
+                    <div class="property-item-image">
+                        <img src="image/most-section 11.jpg" alt="">
+                        <button>Featured</button>
+                        <div class="property-item-image-location"><i class="fa-solid fa-location-dot"></i> <span>Rohini Sector-1, Delhi</span></div>
+                    </div>
+                    <div class="property-layer">
+                        <h4>Rohini Sector-1</h4>
+                        <p>Well Renovated Kothi, wide road, nice and Peacefully Location.</p>
+                        <button>View details</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="property-scroll-section">
+                <div class="property-scroll-section-res">
+                    <button class="scroll-btn left-btn" id="scrollLeft"><i class="fa-solid fa-arrow-left"
+                            style="color: #ffffff;"></i></button>
+                    <button class="scroll-btn right-btn" id="scrollRight"><i class="fa-solid fa-arrow-right"
+                            style="color: #ffffff;"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <div class="work-section">
+        <div class="work-section-res" data-aos="zoom-in-up">
+            <h1>Our Work In 3 Steps</h1>
+            <span>Discover a range of vacation homes worldwide, Book securely and get expert customer support for
+                stress-free stay</span>
+            <div class="work-section-box">
+                <div class="work-section-item">
+                    <i class="fa-solid fa-house-user"></i>
+                    <h3>Research Phase</h3>
+                    <span>Find your dream house in just a few clicks.</span>
+                </div>
+                <div class="work-section-item">
+                    <i class="fa-solid fa-handshake"></i>
+                    <h3>Close the deal</h3>
+                    <span>Finalize your house booking with ease and peace of mind. Book now and enjoy your stay.</span>
+                </div>
+                <div class="work-section-item">
+                    <i class="fa-solid fa-key"></i>
+                    <h3>Key delivery</h3>
+                    <span>Our simple key delivery system makes checking in to your home a breeze.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="service-section" style="overflow: hidden;" id="service-page">
+        <div class="service-section-res" data-aos="fade-left">
+            <div class="service-left-section"><img src="image/service.jpeg" alt="error"></div>
+            <div class="service-right-section">
+                <span>Our Services</span>
+                <h1>And here's how? We do insurance better</h1>
+                <div class="service-li"><i class="fa-regular fa-circle-check"></i> Save an average of $250 per year
+                </div>
+                <div class="service-li"><i class="fa-regular fa-circle-check"></i> File a claim in 3 minutes</div>
+                <div class="service-li"><i class="fa-regular fa-circle-check"></i> Easily manage your policy online
+                </div>
+                <div class="service-li"><i class="fa-regular fa-circle-check"></i> Skip the faxing, long pagework &
+                    unnecessary phone calls</div>
+                <div class="service-li"><i class="fa-regular fa-circle-check"></i> Get support from our team</div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="about-section" id="about-page">
+        <div class="about-section-res" data-aos="fade-right">
+            <div class="about-section-left">
+                <h1>About RealEstate.</h1>
+                <span>
+                    RealEstate is a new age digital platform that aims to change the way resale transactions are done.
+                    Sellers & Buyers can now avoid the long & tedious traditional process and conclude the transaction
+                    at the best price, at the click of a button.
+                    Our platform offers seamless and direct flow of information to all stakeholders, thereby bringing
+                    complete transparency and trust.
+                </span>
+                <div class="about-section-button">
+                    <button>Contact Us <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
+                </div>
+            </div>
+            <div class="about-section-right"><img src="image/about 1.jpeg" alt="error"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="footer-section" id="contact-page">
+        <div class="footer-section-res">
+            <div class="footer-section-top">
+                <div class="footer-brand">
+                    <div class="footer-img"><i class="fa-solid fa-house-chimney"></i> <span>RealEstate</span></div>
+                    <p>
+                        All state aims to revolutionize the residential resale transactions by making them transparent,
+                        simple, and quick. <br>
+                        You can now skip the complicated and unnecessary steps and sell your apartment at the best price
+                        with instant payment.
+                    </p>
+
+                </div>
+
+                <div class="footer-links-section">
+                    <!-- Links Section -->
+                    <div class="footer-box1">
+                        <h4>About</h4>
+                        <div class="item-box1">
+                            <li><a href="#">Deals</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </div>
+                    </div>
+
+                    <!-- Links Section -->
+                    <div class="footer-box2">
+                        <h4>Helpful Links</h4>
+                        <div class="item-box2">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Blogs</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                            <li><a href="#">Agent Login</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="footer-contact">
+                    <h4>Newsletter</h4>
+                    <p> Sign up for new updates </p>
+                    <form action="#" class="footer-section-search">
+                        <input type="email" placeholder="Enter your Email">
+                        <button type="submit" class="home-submit-button">Submit <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </form>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/" aria-label="Facebook" class="social-icons-anc" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/" aria-label="Instagram" class="social-icons-anc" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.twitter.com/" aria-label="Twitter" class="social-icons-anc" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/" aria-label="Twitter" class="social-icons-anc" title="Youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>Copyright, RealEstate 2024. All rights reserved.</p>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <div class="form-section" id="form-section">
+        <div class="form-section-res">
+            <div class="form-left-section">
+                <h1>Log In</h1>
+                <span class="form-span1">log in to your <b>RealEstate</b> account.</span>
+                <h5>Verify your Mobile Number</h5>
+                <form action="#" class="form-section-search">
+                    <span>+91</span>
+                    <input type="email" placeholder="Enter your Number" required maxlength="10" minlength="10">
+                    <button type="submit" class="form-submit-button">Get OTP <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                </form>
+
+                <span class="form-span2">Or</span>
+                <button class="google-btn"><i class="fab fa-google"></i>Login with Gmail</button>
+                <button class="facebook-btn"><i class="fab fa-facebook"></i>Login with Facebook</button>
+            </div>
+
+            <i class="fa-solid fa-xmark formxmark" onclick="formclose()"></i>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
